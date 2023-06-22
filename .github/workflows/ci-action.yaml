@@ -91,7 +91,7 @@ jobs:
       - name: setup git config
         run: |
           git config --global user.email "tunnie0409.tk@gmail.com"
-          git config --global user.name "thanawit-k"
+          git config --global user.name "thanawit"
           echo ${{ github.sha }}
           sed -i "s#${{ github.actor }}.*#${{ github.actor }}/reactapp-ci:${{ github.sha }}#g" deployment.yaml
           git add -A
