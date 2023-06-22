@@ -71,7 +71,7 @@ jobs:
           context: ./
           # Note: tags has to be all lower-case
           tags: |
-            thanawit-k/reactapp-ci:${{ github.sha }} 
+            thanawit09/reactapp-ci:${{ github.sha }} 
           # ghcr.io/thanawit-k/reactapp-ci:${{ github.sha }}
           # build on feature branches, push only on main branch
           push: ${{ github.ref == 'refs/heads/main' }}
