@@ -74,7 +74,7 @@ jobs:
             thanawit-k/reactapp-ci:${{ github.sha }} 
             ghcr.io/thanawit-k/reactapp-ci:${{ github.sha }}
           # build on feature branches, push only on main branch
-          push: ${{ github.ref == 'refs/heads/master' }}
+          push: ${{ github.ref == 'refs/heads/main' }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
